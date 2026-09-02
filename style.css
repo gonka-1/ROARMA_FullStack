@@ -1,0 +1,65 @@
+
+
+.card {
+    height: 550px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    
+   
+}
+
+.cajaHeader{
+    border: 1px black solid;
+    background-color: green !important;
+
+}
+
+
+.card-img-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 220px;
+}
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn-ver{
+    background-color: rgb(15, 58, 9);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer{
+    background-color: rgb(15, 58, 9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.contenedor{
+    background-color: #f7f7f7;
+}
+
+.footer-contendor{
+   background-color: green
+}
