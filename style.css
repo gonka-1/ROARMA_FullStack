@@ -1,5 +1,3 @@
-
-
 .card {
     height: 550px;
     border: 1px black solid;
@@ -62,4 +60,19 @@
 
 .footer-contendor{
    background-color: green
+}
+
+.slices{
+    border: 1px red solid;
+    height: auto;
+}
+
+
+.carousel-inner{
+    height: 300px;
+}
+
+.logo{
+    border: 1px black solid;
+    margin-right: 50px;
 }
