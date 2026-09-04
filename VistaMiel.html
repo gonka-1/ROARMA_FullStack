@@ -107,13 +107,16 @@
                     <hr class="border border-dark border-3 opacity-75 Linea">
                 </div>
                 <div class="contenedor-opciones">
-                    <select class="form-select selector " aria-label="Default select example">
-                        <option selected>1 FRASCO</option>
-                        <option value="1">2 FRASCOS</option>
-                        <option value="2">3 FRASCOS</option>
-                        <option value="3">4 FRASCOS</option>
-                    </select>  
-                    <button type="button" class="btn btn-relieve btn-guardar">Agregar al Carrito</button>
+                 <h6 class="fw-bold m-0">Stock disponible</h6>
+                    <div class="d-flex align-items-center gap-2">
+                        <span>Cantidad:</span>
+                        <select id="selectCantidad" class="form-select selector w-auto" aria-label="Seleccionar cantidad">
+                        </select>
+                        <span id="textoStock" class="text-muted small">(+50 Frascos disponibles)</span>
+                    </div>
+                    <button type="button" class="btn btn-relieve btn-guardar" onclick="agregarAlCarrito()">
+                        Agregar al Carrito
+                    </button>
                 </div> 
            </div>
         </div>
