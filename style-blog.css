@@ -14,18 +14,91 @@
 }
 /*HEADER*/
 
-
-/*LETRAS FUENTES*/
-/* Fuente principal para todo el sitio */
-body{
-    font-family: 'Montserrat', sans-serif;
+/*MAIN*/
+.colorFondoBlogs{
+    background-color: antiquewhite;
+    min-height: 80vh;
+    overflow: hidden;
+}
+.tituloBlogs{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.subtituloRecetas{
+    color: rgb(218, 212, 208);
+    width: fit-content;
+    margin: 50px;
+    padding: 8px 30px;
+    margin-top: 50px;
+    background-color: #2E8B57;
+    border-radius: 20px;
+}
+.carruselBlogs{
+    max-width: 820px;
+    margin: 20px auto;
 }
 
-/* Fuente para encabezados y títulos */
-h1, h2, h3, h4, h5, h6, .card-title{
-    font-family: 'Playfair Display', serif;
+
+.carruselBlogs .carousel-item img{
+    height: 480px;
+    object-fit: cover; /*evita que la foto se deforme o estire*/
+    object-position: center; /*centra el encuadre exacto de la imagen*/
+    border-radius: 14px;
 }
-/*LETRAS FUENTES*/
+
+/* Baja todo el bloque de texto (h5 + p) hacia la base de la foto */
+.carruselBlogs .carousel-caption {
+    bottom: 25px !important;    /* Controla qué tan abajo queda: prueba con 15px o 25px */
+    padding-bottom: 0;
+}
+
+/* Título */
+.carruselBlogs .carousel-caption h5 {
+    color: #ffffff !important;
+    font-weight: 700;
+    margin-bottom: 8px;  /* Pequeña separación natural con el párrafo */
+}
+
+/* Párrafo */
+.carruselBlogs .carousel-caption p {
+    color: #ffffff;
+    margin-bottom: 0;           /* Quita márgenes residuales */
+}
+
+.subtituloNoticias{
+    color: rgb(218, 212, 208);
+    width: fit-content;
+    margin: 50px;
+    padding: 8px 30px;
+    margin-top: 50px;
+    background-color: #2E8B57;
+    border-radius: 20px;
+}
+
+.tarjetasBlogs{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 40px auto; 
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.tarjetasBlogs .card-noticia{
+    background-color: #f4efe9;
+    width: 280px;
+    border-radius: 16px;    
+}
+.tarjetasBlogs .card-noticia img{
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+/*MAIN*/
 
 
 
@@ -123,3 +196,15 @@ a {
     margin-bottom: 5px;
 }
 /*FOOTER*/
+
+/*LETRAS FUENTES*/
+/* Fuente principal para todo el sitio */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fuente para encabezados y títulos */
+h1, h2, h3, h4, h5, h6, .card-title{
+    font-family: 'Playfair Display', serif;
+}
+/*LETRAS FUENTES*/
