@@ -10,9 +10,14 @@ var productos = [
     { id: "PO003", nombre: "Quinoa", precio: 5000, stock: 200, Unidad: "KG" }
 ];
 
+
+//FUNCIONES DE CARRITO
+
+/*CARRITO*/
+var porcentajeDescuento = 0;
+
 const llave = "carrito"; 
 
-// 1. OBTENER PRODUCTO ACTUAL PRIMERO
 var nombreArchivo = window.location.pathname.split("/").pop();
 
 var mapaProductos = {
@@ -33,7 +38,6 @@ var productoActual = productos.find(function(p) {
     return p.id === idActual;
 });
 
-// 2. FUNCIONES DE LÓGICA
 function guardar(producto) {
     var storageActual = localStorage.getItem(llave);
     var lista = storageActual != null ? JSON.parse(storageActual) : [];
@@ -79,21 +83,170 @@ function actualizarInterfazStock() {
     var select = document.getElementById("selectCantidad");
     var texto = document.getElementById("textoStock");
 
-    texto.textContent = `(+${productoActual.stock} ${productoActual.Unidad} disponibles)`;
+    if (texto !== null && select !== null) {
+        texto.textContent = `(+${productoActual.stock} ${productoActual.Unidad} disponibles)`;
 
-    var maxOpciones = productoActual.stock;
+        var maxOpciones = productoActual.stock;
+        select.innerHTML = "";
 
-    select.innerHTML = "";
-
-    if (maxOpciones <= 0) {
-        select.innerHTML = '<option value="0">Sin stock</option>';
-        select.disabled = true;
-    } else {
-        select.disabled = false;
-        for (var i = 1; i <= maxOpciones; i++) {
-            select.innerHTML += `<option value="${i}">${i} ${productoActual.Unidad}</option>`;
+        if (maxOpciones <= 0) {
+            select.innerHTML = '<option value="0">Sin stock</option>';
+            select.disabled = true;
+        } else {
+            select.disabled = false;
+            for (var i = 1; i <= maxOpciones; i++) {
+                select.innerHTML += `<option value="${i}">${i} ${productoActual.Unidad}</option>`;
+            }
         }
     }
 }
 
 actualizarInterfazStock();
+
+function obtenerCarrito(){
+    var storageActual = localStorage.getItem("carrito");
+    return storageActual != null ? JSON.parse(storageActual) : [];
+}
+
+function renderizarCarrito(){
+    var lista = obtenerCarrito();
+    var contenedor = document.getElementById("contenedorProductos");
+    var subtotalTexto = document.getElementById("subtotalTexto");
+    var totalTexto = document.getElementById("totalTexto");
+
+    contenedor.innerHTML = "";
+    var totalAcumulado = 0;
+
+    if(lista.length === 0){
+        contenedor.innerHTML = `
+        <div class="card corder-0 shadow-sm p-4 text-center text-muted">
+            Tu carrito vacío.
+        </div>`;
+        subtotalTexto.textContent = "$0";
+        totalTexto.textContent = "$0";
+        return;
+    }
+
+    lista.forEach(function(item, indice){
+        var subtotal = item.precio * item.cantidad;
+        totalAcumulado += subtotal;
+
+    contenedor.innerHTML += `
+        <div class="card border-0 shadow-sm p-3 mb-3 rounded-3">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <div>
+                        <h6 class="fw-bold mb-1">${item.nombre}</h6>
+                        <span class="text-muted small">$${item.precio} / ${item.unidad}</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-2 px-2 py-1">
+                        <button class="btn btn-sm border-0 px-2" onclick="cambiarCantidad(${indice}, -1)">-</button>
+                        <span class="px-3 fw-bold">${item.cantidad} ${item.unidad}</span>
+                        <button class="btn btn-sm border-0 px-2" onclick="cambiarCantidad(${indice}, 1)">+</button>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="fw-bold fs-5">$${subtotal}</span>
+                        <button class="btn btn-link text-danger p-0 border-0" onclick="eliminarProducto(${indice})">
+                            ❌
+                        </button>
+                    </div>
+                </div>
+            </div>`;
+        });
+
+        var montoDescuento = Math.round(totalAcumulado * porcentajeDescuento);
+        var totalFinal = totalAcumulado - montoDescuento;
+
+        if(subtotalTexto) subtotalTexto.textContent = `$${totalAcumulado}`;
+        if(totalTexto) totalTexto.textContent = `$${totalFinal}`;
+}
+
+function cambiarCantidad(indice, cambio){
+    var lista = obtenerCarrito();
+    
+    lista[indice].cantidad += cambio;;
+
+    if(lista[indice].cantidad <= 0){
+        lista.splice(indice, 1);
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(lista));
+
+    renderizarCarrito();
+}
+
+function eliminarProducto(indice){
+    var lista = obtenerCarrito();
+
+    lista.splice(indice, 1);
+
+    localStorage.setItem("carrito", JSON.stringify(lista));
+    renderizarCarrito();
+}
+
+function vaciarCarrito(){
+    localStorage.removeItem("carrito");
+    porcentajeDescuento = 0;
+
+    var input = document.getElementById("inputCupon");
+    var mensaje = document.getElementById("mensajeCupon");
+
+    if(input !== null){
+        input.value = "";
+    }
+
+    if (mensaje != null){
+        mensaje.textContent = "";
+    }
+
+    renderizarCarrito();
+}
+
+
+function comprar(){
+    var lista = obtenerCarrito();
+
+    if(lista.length === 0){
+        alert("Tu carrito está vacio. Agrega productos antes de continuar.");
+        return;
+    }
+
+    alert("Muchas gracias por tu compra en Huerto-Hogar!!")
+
+    localStorage.removeItem("carrito");
+    renderizarCarrito();
+
+
+    window.location.href= "Principal.html";
+}
+
+function aplicarCupon(){
+    var input = document.getElementById("inputCupon");
+    var mensaje = document.getElementById("mensajeCupon");
+
+    if(!input || !mensaje) return;
+
+    var codigo = input.value.trim().toUpperCase();
+
+    if(codigo === "HUERTITO10"){
+        porcentajeDescuento = 0.10;
+
+        mensaje.className = "d-block mt-1 small text-success";
+        mensaje.textContent = "Cupón del 10% aplicado!!";
+    }else if(codigo === "FUJI123"){
+        porcentajeDescuento = 0.20;
+        mensaje.className = "d-block mt-1 small text-success";
+        mensaje.textContent = "Cupón del 20% aplicado!!";
+    }else{
+        porcentajeDescuento = 0;
+        mensaje.className = "d-block mt-1 small text-danger";
+        mensaje.textContent = "Cupón no valido";
+    }
+
+    renderizarCarrito();
+}
+
+renderizarCarrito();
+
+/*CARRITO*/
