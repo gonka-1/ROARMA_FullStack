@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style-carrito.css">
     <title>Carrito - Huerto Hogar</title>
             <!-- Servidores de Google Fonts -->
-            <link rel="stylesheet" href="https://fonts.googleapis.com">
-            <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
             <!-- Importar Montserrat y Playfair Display -->
              <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -55,7 +55,66 @@
 
 
 
-    <main></main>
+    <main>
+
+        <div class="container my-4">
+            <div class="row g-4">
+                <!-- Columna Izquierda: Lista de Productos -->
+                <div class="col-lg-8" id="contenedorProductos">
+                    <!-- Se llena dinámicamente con JS -->
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 rounded-3  card">
+                        <h5 class="fw-bold mb-3 fs-6">Resumen de compra</h5>
+        
+                        <div class="d-flex justify-content-between mb-2 text-muted">
+                            <span>Productos</span>
+                            <span id="subtotalTexto">$0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2 text-success d-none" id="filaDescuento">
+                            <span>Descuento</span>
+                            <span id="descuentoTexto">-$0</span>
+                        </div>
+                            
+                        <div class="d-flex justify-content-between mb-3 text-muted">
+                            <span>Envío</span>
+                            <span class="text-success fw-semibold">Gratis</span>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold fs-5">Total</span>
+                            <span class="fw-bold fs-4 text-dark" id="totalTexto">$0</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputCupon" class="form-label text-muted small mb-1">Ingrese el cupón de descuento</label>
+                            <div class="input-group">
+                                <input type="text" id="inputCupon" class="form-control" placeholder="">
+                                <button class="btn btn-outline-secondary text-uppercase fw-semibold" type="button" onclick="aplicarCupon()">Aplicar</button>
+                            </div>
+                            <small id="mensajeCupon" class="d-block mt-1 small"></small>
+                        </div>
+
+                        
+        
+                        <button class="btn btn-primary w-100 py-2 fw-semibold" onclick="comprar()">
+                            Continuar compra
+                        </button>
+        
+                        <button class="btn btn-link text-danger w-100 mt-2 text-decoration-none btn-sm"
+                            onclick="vaciarCarrito()">
+                            Vaciar carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
 
 
 
@@ -107,6 +166,9 @@
     
     
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="action.js"></script>
     
 </body>
 </html>
