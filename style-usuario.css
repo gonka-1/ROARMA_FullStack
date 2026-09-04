@@ -1,6 +1,7 @@
 /*HEADER*/
 .barraMenu{
     background-color: #dce8e1;
+    height: 80px;
 }
 
 .barraMenu .navbar-collapse{
@@ -10,7 +11,9 @@
 .logo {
     display: flex;
     justify-content: flex-end;
+    height: 80px;
     margin-right: 20px;
+    padding: 10px;
 }
 /*HEADER*/
 

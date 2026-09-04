@@ -1,0 +1,224 @@
+/*HEADER*/
+.barraMenu{
+    background-color: #dce8e1;
+}
+
+.barraMenu .navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+/*HEADER*/
+
+
+
+/*LETRAS FUENTES*/
+/* Fuente principal para todo el sitio */
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fuente para encabezados y títulos */
+.h1, h2, h3, h4, h5, h6, .card-title{
+    font-family: 'Playfair Display', serif;
+}
+/*LETRAS FUENTES*/
+
+
+
+/*MAIN*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.slices{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    height: 80px;
+    object-fit: cover;
+}
+
+.carusel{
+    border: rgb(28, 180, 28) solid;
+    margin: 50px;
+    margin-top: 5px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 500px;
+}
+
+.texto{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 50%;
+    height: 40px;
+    letter-spacing: 2px;
+}
+
+.tituloProduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.contendedor-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 50px;
+    width: 80%;
+    margin-right: 100px;
+    
+}
+
+.descripcion{
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    margin-right: 50px;
+    margin-top: 70px;
+}
+
+.Linea{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.DescripcionProducto{
+    color: black;
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contenedor-opciones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    width: 500px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.selector{
+    width: 150px;
+    margin-left: 70px;
+}
+
+.btn-guardar{
+    display: flex;
+    align-items: center;
+    width: 155px;
+}
+
+.Otros{
+    margin-left: 50px;
+}
+
+.cartasOtros{
+    display: flex;
+    padding: 20px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+/* 1. Estado normal del botón */
+.btn-relieve {
+    background-color: #28a745 !important; 
+    color: #ffffff !important;            
+    display: inline-block;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.btn-relieve:active,
+.btn-relieve:focus:active {
+    background-color: #1b5233 !important; 
+    color: #ffffff !important;
+    transform: translateY(2px) !important;
+    box-shadow: 0 2px 0 #1b5233 !important;
+}
+/*MAIN*/
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #2E8B57;
+    color: rgb(218, 212, 208);
+    padding: 30px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-contendor {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col {
+    text-align: center;
+    flex: 1;
+}
+
+.btn.btn-success {
+    background-color: rgb(188, 198, 188);
+    color: rgb(12, 10, 10);
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(218, 212, 208);
+}
+.huerto {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0 0 15px 0;
+}
+
+.descripcion-huerto{
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: auto;
+}
+
+.titulos{
+    font-weight: bold; 
+    font-size: 25px; 
+    margin-bottom: 5px;
+}
+/*FOOTER*/

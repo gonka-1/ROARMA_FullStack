@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-vistaProducto.css">
+    <!-- Servidores de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importar Montserrat y Playfair Display -->
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Producto - Huerto Hogar</title>
+</head>
+<body>
+
+
+    <header>
+        <div class="cajaHeader">
+            <nav class="navbar navbar-expand-lg  barraMenu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Principal.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ubicaciones.html">Ubicaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Carrito.html">Carrito</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="Usuario.html">
+                        <img height="60px" src="imagenes/LogoPlanta.jpeg" alt="logoPlanta">
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="texto">
+                    <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Principal.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="Productos.html">Productos</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Vista Productos</li>
+                    </ol>
+                </nav>
+                </div>
+                
+            </div>
+
+            <div class="col-6">
+                <div class="contendedor-producto">
+                    <h2 class="tituloProduto">Leche Entera - 1100$</h1>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col">
+                <div id="carouselExampleSlidesOnly" class="carousel slide carusel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img height="500px" src="imagenes/leche.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img height="500px" src="ver2imagenes/leche entera.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img height="500px" src="ver2imagenes/leche.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-success descripcion">
+                    <hr class="border border-dark border-2 opacity-50 Linea">
+                    <p class="DescripcionProducto">
+                                La leche entera es un importe aporte de nutrientes esenciales tales
+                                como el calcio, proteína de alta calidad biológica, vitaminas A, D y del complejo B.</p>
+                    <hr class="border border-dark border-3 opacity-75 Linea">
+                </div>
+                <div class="contenedor-opciones">
+                    <select class="form-select selector " aria-label="Default select example">
+                        <option selected>1 FRASCO</option>
+                        <option value="1">2 FRASCO</option>
+                        <option value="2">3 FRASCO</option>
+                        <option value="3">4 FRASCO</option>
+                    </select>  
+                    <button type="button" class="btn btn-relieve btn-guardar">Agregar al Carrito</button>
+                </div> 
+           </div>
+        </div>
+
+        <hr class="border border-dark border-3 opacity-75 Linea">
+
+            <div class="Otros">
+                <h3>Otros Productos</h3>
+            </div>
+
+        <div class="row">
+
+
+           <div class="cartasOtros"> 
+                    <div class="col-2">
+                        <div class="card" style="width: 200px;">
+                        <img height="150px" src="imagenes/naranjas_valencia.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Naranja Valencia</h5>
+                            <a href="VistaNaranja.html" class="btn btn-relieve">Ver Producto</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" style="width: 200px;">
+                        <img height="150px" src="imagenes/Platanos.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Platanos</h5>
+                            <a href="VistaPlatano.html" class="btn btn-relieve">Ver Producto</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" style="width: 200px;">
+                        <img height="150px" src="imagenes/Espinacas.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Espinaca</h5>
+                            <a href="VistaEspinaca.html" class="btn btn-relieve">Ver Producto</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" style="width: 200px;">
+                        <img height="150px" src="imagenes/Zanahoria.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Zanahoria</h5>
+                            <a href="VistaZanahoria.html" class="btn btn-relieve">Ver Producto</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" style="width: 200px;">
+                        <img height="150px" src="imagenes/Miel.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Miel</h5>
+                            <a href="VistaMiel.html" class="btn btn-relieve">Ver Producto</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" style="width: 200px;">
+                        <img height="150px" src="ver2imagenes/Pimientos.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pimientos</h5>
+                            <a href="VistaPimiento.html" class="btn btn-relieve">Ver Producto</a>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer-contendor">
+            <div class="row">
+                <div class="col">
+                    <h3 class="huerto">Huerto-Hogar</h3>
+                    <p class="descripcion-huerto"> Productos agrícolas de calidad,
+                        directamente para tu hogar.
+                    </p>
+                </div>
+
+                <div class="col">
+
+                    <h4 class="titulos">Categorías</h4>
+                    <ul>
+                        <li><a href="#">Despensa</a></li>
+                        <li><a href="#">Frutas</a></li>
+                        <li><a href="#">Verduras</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+
+                    <h4 class="titulos">Contacto</h4>
+                    <ul>
+                        <li>Dirección: Av. Principal 123</li>
+                        <li>Teléfono: +56 9 1234 5678</li>
+                        <li>Email: info@huertohogar.cl</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4 class="titulos">Nutre tu día</h4>
+                    <p class="titulo-correo"> Obtén beneficios por tu suscripción</p>
+                    <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                    <button type="button" class="btn btn-success">Suscribirse</button>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="action.js"></script>
+
+
+
+</body>
+
+</html>
