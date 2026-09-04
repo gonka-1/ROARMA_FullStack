@@ -45,22 +45,13 @@
     justify-content: flex-end;
 }
 
-.footer{
-    background-color: rgb(15, 58, 9);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
+
 
 .contenedor{
     background-color: #f7f7f7;
 }
 
-.footer-contendor{
-   background-color: green
-}
+
 
 .slices{
     border: 1px red solid;
@@ -75,4 +66,76 @@
 .logo{
     border: 1px black solid;
     margin-right: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: aquamarine;
+    color: rgb(15, 14, 13);
+    padding: 30px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-contendor {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col {
+    text-align: center;
+    flex: 1;
+}
+
+.btn.btn-success {
+    background-color: rgb(6, 182, 6);
+    color: white;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(22, 54, 2);
+}
+.huerto {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0 0 15px 0;
+}
+
+.descripcion-huerto{
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: auto;
+}
+
+.titulos{
+    font-weight: bold; 
+    font-size: 25px; 
+    margin-bottom: 5px;
 }
