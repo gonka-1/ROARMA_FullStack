@@ -1,3 +1,22 @@
+/*HEADER*/
+.barraMenu{
+    background-color: #dce8e1;
+}
+
+.barraMenu .navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+/*HEADER*/
+
+
+
+/*LETRAS FUENTES*/
 /* Fuente principal para todo el sitio */
 body{
     font-family: 'Montserrat', sans-serif;
@@ -7,7 +26,15 @@ body{
 h1, h2, h3, h4, h5, h6, .card-title{
     font-family: 'Playfair Display', serif;
 }
+/*LETRAS FUENTES*/
 
+
+
+
+
+
+
+/*CARTAS*/
 .card {
     height: 550px;
     background-color: #ffebdbef;
@@ -43,11 +70,6 @@ h1, h2, h3, h4, h5, h6, .card-title{
 
 .card-text{
     color:#666666;
-}
-
-.cajaHeader {
-    border: 1px black solid;
-    background-color: green !important;
 }
 
 .card-img-top {
@@ -91,23 +113,17 @@ h1, h2, h3, h4, h5, h6, .card-title{
     box-shadow: 0 2px 0 #1b5233;
 }
 
-
-.logo {
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-
 .contenedor {
     background-color: #FEF4E7;
     padding: 20px; /* Añade respiro interno para que las cards no peguen al borde */
 }
+/*CARTAS*/
 
 
 
 
 
+/*MAIN*/
 
 body {
     margin: 0;
@@ -116,10 +132,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+/*MAIN*/
+
+
+
+/*FOOTER*/
 
 footer {
-    background-color: aquamarine;
-    color: rgb(15, 14, 13);
+    background-color: #2E8B57;
+    color: rgb(218, 212, 208);
     padding: 30px 0;
     width: 100%;
     margin-top: auto;
@@ -142,8 +163,8 @@ footer {
 }
 
 .btn.btn-success {
-    background-color: rgb(6, 182, 6);
-    color: white;
+    background-color: rgb(188, 198, 188);
+    color: rgb(12, 10, 10);
     margin-top: 10px;
 }
 
@@ -159,7 +180,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: rgb(22, 54, 2);
+    color: rgb(218, 212, 208);
 }
 .huerto {
     font-size: 34px;
@@ -180,3 +201,4 @@ a {
     font-size: 25px; 
     margin-bottom: 5px;
 }
+/*FOOTER*/

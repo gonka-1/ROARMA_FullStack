@@ -1,3 +1,35 @@
+/*HEADER*/
+.barraMenu{
+    background-color: #dce8e1;
+}
+
+.barraMenu .navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+/*HEADER*/
+
+
+
+/*LETRAS FUENTES*/
+/* Fuente principal para todo el sitio */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fuente para encabezados y títulos */
+h1, h2, h3, h4, h5, h6, .card-title{
+    font-family: 'Playfair Display', serif;
+}
+/*LETRAS FUENTES*/
+
+
+/*FOOTER*/
 body {
     margin: 0;
     padding: 0;
@@ -7,8 +39,8 @@ body {
 }
 
 footer {
-    background-color: aquamarine;
-    color: rgb(15, 14, 13);
+    background-color: #2E8B57;
+    color: rgb(218, 212, 208);
     padding: 30px 0;
     width: 100%;
     margin-top: auto;
@@ -31,8 +63,8 @@ footer {
 }
 
 .btn.btn-success {
-    background-color: rgb(6, 182, 6);
-    color: white;
+    background-color: rgb(188, 198, 188);
+    color: rgb(12, 10, 10);
     margin-top: 10px;
 }
 
@@ -48,7 +80,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: rgb(22, 54, 2);
+    color: rgb(218, 212, 208);
 }
 .huerto {
     font-size: 34px;
@@ -69,3 +101,4 @@ a {
     font-size: 25px; 
     margin-bottom: 5px;
 }
+/*FOOTER*/
