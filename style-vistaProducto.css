@@ -1,6 +1,6 @@
 /*HEADER*/
 .barraMenu{
-    background-color: #dce8e1;
+    background-color: #E8F5E9;
 }
 
 .barraMenu .navbar-collapse{
@@ -37,6 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #FEF4E7;
 }
 
 .slices{

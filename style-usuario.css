@@ -1,6 +1,6 @@
 /*HEADER*/
 .barraMenu{
-    background-color: #dce8e1;
+    background-color: #E8F5E9;
     height: 80px;
 }
 
@@ -36,7 +36,45 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #FEF4E7;
 }
+
+/* BOTÓN */
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura el centrado vertical */
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-relieve {
+    background-color: #2E8B57;
+    color: white !important;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+
+    /* Sombra inferior oscura */
+    box-shadow: 0 4px 0 #1b5233;
+    transition: all 0.1s ease;
+}
+
+/* Al pasar el cursor */
+.btn-relieve:hover {
+    background-color: #236b43 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #1b5233;
+}
+
+/* Efecto de presionar */
+.btn-relieve:active {
+    background-color: #1b5233 !important;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1b5233;
+}
+/* BOTÓN */
 /*MAIN*/
 
 

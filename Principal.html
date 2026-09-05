@@ -19,42 +19,48 @@
 
 <body>
     <header>
-        <div class="cajaHeader">
-                <nav class="navbar navbar-expand-lg  barraMenu">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="Principal.html">Inicio</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link"  href="Productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Ubicaciones.html">Ubicaciones</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Carrito.html">Carrito</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Blogs.html">Blogs</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="logo">
-                        <a href="Usuario.html">
-                            <img height="60px" src="imagenes/LogoPlanta.jpeg" alt="logoPlanta">
-                        </a>
-                    </div>
-                </nav>
-        </div>   
-    </header>
+    <div class="cajaHeader">
+        <nav class="navbar navbar-expand-lg barraMenu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Principal.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ubicaciones.html">Ubicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blogs.html">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- LOGO CON MENÚ DESPLEGABLE -->
+            <div class="logo dropdown">
+                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img height="60px" src="imagenes/LogoPlanta.png" alt="logoPlanta" style="cursor: pointer;">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="Usuario-ingresar.html">Ingresar</a></li>
+                    <li><a class="dropdown-item" href="Usuario.html">Crear usuario</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>   
+</header>
 
     
     
@@ -183,42 +189,44 @@
     </main>
 
 
-    <footer>
-        <div class="footer-contendor">
-            <div class="row">
-                <div class="col">
-                    <h3 class="huerto">Huerto-Hogar</h3>
-                    <p class="descripcion-huerto"> Productos agrícolas de calidad,
-                        directamente para tu hogar.
-                    </p>
+<footer>
+    <div class="footer-contendor">
+        <div class="row">
+            <div class="col">
+                <div class="logoFooter">
+                    <!-- Tamaño ajustado directamente en la etiqueta img -->
+                    <img src="imagenes/LogoHuertoHogar.png" alt="Logo Huerto Hogar" style="width: 200px; height: auto;">
                 </div>
-                <div class="col">
-                    <h4 class="titulos">Categorías</h4>
-                    <ul>
-                        <li><a href="#">Despensa</a></li>
-                        <li><a href="#">Frutas</a></li>
-                        <li><a href="#">Verduras</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="titulos">Contacto</h4>
-                    <ul>
-                        <li>Dirección: Av. Principal 123</li>
-                        <li>Teléfono: +56 9 1234 5678</li>
-                        <li>Email: info@huertohogar.cl</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="titulos">Nutre tu día</h4>
-                    <p class="titulo-correo"> Obtén beneficios por tu suscripción</p>
-                    <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
-                    <button type="button" class="btn btn-success">Suscribirse</button>
-                </div>
+                <p class="descripcion-huerto" style="font-size: 15px;"> Productos agrícolas de calidad,
+                    directamente para tu hogar.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="titulos">Categorías</h4>
+                <ul>
+                    <li><a href="#">Despensa</a></li>
+                    <li><a href="#">Frutas</a></li>
+                    <li><a href="#">Verduras</a></li>
+                </ul>
+            </div>
+            <div class="col">
+
+                <h4 class="titulos">Contacto</h4>
+                <ul>
+                    <li>Direccion: Av. Principal 123</li>
+                    <li>Telefono: +56 9 1234 5678</li>
+                    <li>Email: info@huertohogar.cl</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="titulos">Nutre tu día</h4>
+                <p class="titulo-correo"> Obtén beneficios por tu suscripción</p>
+                <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                <button type="button" class="btn btn-success">Suscribirse</button>
             </div>
         </div>
-    
-    
-    </footer>
+    </div>
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

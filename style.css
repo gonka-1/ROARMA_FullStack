@@ -1,6 +1,6 @@
 /*HEADER*/
 .barraMenu{
-    background-color: #dce8e1;
+    background-color: #E8F5E9;
 }
 
 .barraMenu .navbar-collapse{
@@ -19,7 +19,7 @@
 
  
 .colorFondo {
-    background-color: #ffebdbef; /* Tu color crema */
+    background-color: #FEF4E7; /* Tu color crema */
     min-height: 80vh;          /* Ocupa al menos el 80% del alto visible de la pantalla */
 }
 .tituloInicio{

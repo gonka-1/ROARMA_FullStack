@@ -8,52 +8,60 @@
     <link rel="stylesheet" href="style-blog.css">
     <title>Huerto Hogar - Blogs</title>
 
-            <!-- Servidores de Google Fonts -->
-            <link rel="stylesheet" href="https://fonts.googleapis.com">
-            <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
-        
-            <!-- Importar Montserrat y Playfair Display -->
-             <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Servidores de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importar Montserrat y Playfair Display -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="cajaHeader">
-                <nav class="navbar navbar-expand-lg  barraMenu">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="Principal.html">Inicio</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link"  href="Productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Ubicaciones.html">Ubicaciones</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Carrito.html">Carrito</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Blogs.html">Blogs</a>
-                                </li>
-                            </ul>
-                        </div>
+            <nav class="navbar navbar-expand-lg barraMenu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Principal.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ubicaciones.html">Ubicaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Carrito.html">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Blogs.html">Blogs</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="logo">
-                        <a href="Usuario.html">
-                            <img height="60px" src="imagenes/LogoPlanta.jpeg" alt="logoPlanta">
-                        </a>
-                    </div>
-                </nav>
-        </div>   
-    </header>
+                </div>
 
+                <!-- LOGO CON MENÚ DESPLEGABLE -->
+                <div class="logo dropdown">
+                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img height="60px" src="imagenes/LogoPlanta.png" alt="logoPlanta" style="cursor: pointer;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="Usuario-ingresar.html">Ingresar</a></li>
+                        <li><a class="dropdown-item" href="Usuario.html">Crear usuario</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 
 
@@ -68,25 +76,33 @@
                 <h3>Recetas que puedas hacer con nuestros productos</h3>
             </div>
             <div class="carruselBlogs">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000"> 
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                    data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" >
-                            <a href="https://www.gourmet.cl/recetas/pimentones-rellenos/" target="_blank" rel="noopener noreferrer"> 
-                                <img src="imagenes/pimentones-rellenos3.jpg" class="d-block w-100" alt="Pimenton receta">
+                        <div class="carousel-item active">
+                            <a href="https://www.gourmet.cl/recetas/pimentones-rellenos/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="imagenes/pimentones-rellenos3.jpg" class="d-block w-100"
+                                    alt="Pimenton receta">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Pimientos Poblanos Rellenos</h5>
-                                    <p>El balance perfecto entre el toque ahumado del chile asado, un relleno jugoso y queso derretido en su punto. El clásico reconfortante que conquistará tu mesa.</p>
+                                    <p>El balance perfecto entre el toque ahumado del chile asado, un relleno jugoso y
+                                        queso derretido en su punto. El clásico reconfortante que conquistará tu mesa.
+                                    </p>
                                 </div>
-                            </a>   
+                            </a>
                         </div>
-                        <div class="carousel-item" >
-                            <a href="https://www.gourmet.cl/recetas/pastel-de-manzanas/" target="_blank" rel="noopener noreferrer">
+                        <div class="carousel-item">
+                            <a href="https://www.gourmet.cl/recetas/pastel-de-manzanas/" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="imagenes/PastelManzana.jpeg" class="d-block w-100" alt="PastelManzana">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Pastel de manzana </h5>
@@ -94,24 +110,29 @@
                                         que convertirá tu merienda en el mejor momento del día.</p>
                                 </div>
                             </a>
-                            
+
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.gourmet.cl/recetas/timbal-de-quinoa/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.gourmet.cl/recetas/timbal-de-quinoa/" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="imagenes/QuinoaReceta.jpeg" class="d-block w-100" alt="RecetaQuinoa">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Timbal de Quínoa</h5>
-                                    <p>Capas de quínoa suave, vegetales frescos y texturas crujientes que entran por los ojos. Una presentación elegante, fresca y llena de nutrientes para lucirte sin complicarte.</p>
+                                    <p>Capas de quínoa suave, vegetales frescos y texturas crujientes que entran por los
+                                        ojos. Una presentación elegante, fresca y llena de nutrientes para lucirte sin
+                                        complicarte.</p>
                                 </div>
                             </a>
-                            
+
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -127,29 +148,34 @@
                     <img src="imagenes/Noticia1Pajaros.jpg" class="card-img-top" alt="DisiparPajaros">
                     <div class="card-body">
                         <h5 class="card-title">Cómo disipar a los pájaros de los huertos con ecosoluciones</h5>
-                        <a href="https://www.diariofutrono.cl/noticia/agro-y-ganaderia/2024/11/como-disipar-a-los-pajaros-de-los-huertos-con-ecosoluciones" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Saber más</a>
+                        <a href="https://www.diariofutrono.cl/noticia/agro-y-ganaderia/2024/11/como-disipar-a-los-pajaros-de-los-huertos-con-ecosoluciones"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
 
                 <div class="card card-noticia">
                     <img src="imagenes/Noticia2.jpeg" class="card-img-top" alt="muejeres rurales">
                     <div class="card-body">
-                        <h5 class="card-title">Mujeres rurales de Hidalgo reciben huertos, aves y equipamiento para impulsar su economía</h5>
-                        <a href="https://www.effeta.info/mujeres-rurales-de-hidalgo-reciben-huertos-aves-y-equipamiento-para-impulsar-su-economia/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Saber más</a>
+                        <h5 class="card-title">Mujeres rurales de Hidalgo reciben huertos, aves y equipamiento para
+                            impulsar su economía</h5>
+                        <a href="https://www.effeta.info/mujeres-rurales-de-hidalgo-reciben-huertos-aves-y-equipamiento-para-impulsar-su-economia/"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
 
                 <div class="card card-noticia">
                     <img src="imagenes/noticia3.webp" class="card-img-top" alt="cultivos mundiales">
                     <div class="card-body">
-                        <h5 class="card-title">Los 5 cultivos a nivel mundial que requieren más agua para su producción (y su impacto en las comunidades y el medio ambiente)</h5>
-                        <a href="https://www.bbc.com/mundo/articles/cn4y2nk5887o" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Saber más</a>
+                        <h5 class="card-title">Los 5 cultivos a nivel mundial que requieren más agua para su producción
+                            (y su impacto en las comunidades y el medio ambiente)</h5>
+                        <a href="https://www.bbc.com/mundo/articles/cn4y2nk5887o" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
             </div>
 
-        
-        
+
+
     </main>
 
 
@@ -159,8 +185,12 @@
         <div class="footer-contendor">
             <div class="row">
                 <div class="col">
-                    <h3 class="huerto">Huerto-Hogar</h3>
-                    <p class="descripcion-huerto"> Productos agrícolas de calidad,
+                    <div class="logoFooter">
+                        <!-- Tamaño ajustado directamente en la etiqueta img -->
+                        <img src="imagenes/LogoHuertoHogar.png" alt="Logo Huerto Hogar"
+                            style="width: 200px; height: auto;">
+                    </div>
+                    <p class="descripcion-huerto" style="font-size: 15px;"> Productos agrícolas de calidad,
                         directamente para tu hogar.
                     </p>
                 </div>
@@ -173,10 +203,11 @@
                     </ul>
                 </div>
                 <div class="col">
+
                     <h4 class="titulos">Contacto</h4>
                     <ul>
-                        <li>Dirección: Av. Principal 123</li>
-                        <li>Teléfono: +56 9 1234 5678</li>
+                        <li>Direccion: Av. Principal 123</li>
+                        <li>Telefono: +56 9 1234 5678</li>
                         <li>Email: info@huertohogar.cl</li>
                     </ul>
                 </div>
@@ -188,13 +219,11 @@
                 </div>
             </div>
         </div>
-    
-    
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="action.js"></script>
-    
+
 </body>
+
 </html>
