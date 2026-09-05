@@ -247,6 +247,24 @@ function aplicarCupon() {
     renderizarCarrito();
 }
 
-renderizarCarrito();
+function actualizarContadorCarrito(){
+    var contador = document.getElementById("contadorCarrito");
+    if (!contador) return;
+
+    var lista = obtenerCarrito();
+
+    var totalProductos = 0;
+    lista.forEach(item => totalProductos += (item.cantidad || 1));
+
+    contador.textContent = totalProductos || "";
+    contador.style.display = totalProductos > 0 ? "inline-block": "none";
+
+}
+
+actualizarContadorCarrito();
+
+if (document.getElementById("contenedorProductos")) {
+    renderizarCarrito();
+}
 
 /*CARRITO*/
